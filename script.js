@@ -6,73 +6,68 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Ao voltar para casa da escola, você encontra um filhote de cachorro abandonado na rua, assustado e na chuva. Qual o seu primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmacao"
+                texto: "Preciso encontrar uma forma de resgatá-lo e mantê-lo em segurança!",
+                afirmacao: "Você demonstrou empatia imediata ao notar um animal em situação de vulnerabilidade."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmacao"
-            }           
-            
-        ]
-    },
-    {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
-        alternativas: [
-            {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao:"afirmacao"
-            },
-            {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:"afirmacao"
+                texto: "Vou procurar por perto e ver se o dono dele não está procurando por ele.",
+                afirmacao: "Você age com cautela para garantir que o animal não esteja apenas perdido da sua família."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Sua escola decide criar um projeto comunitário sobre causa animal. O professor pede para a turma escolher a primeira ação. Qual opção você apoia?",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:"afirmacao"
+                texto: "Organizar uma campanha de arrecadação de ração e medicamentos para ONGs locais.",
+                afirmacao: "Apoiou ações diretas de suprimento para abrigos que cuidam de muitos animais diariamente."
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
+                texto: "Criar uma feira de conscientização sobre adoção responsável e castração.",
+                afirmacao: "Apostou na educação da comunidade como principal meio de combater o abandono."
             }
-            
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Durante o projeto, surge um debate na sala sobre a melhor maneira de combater o abandono de animais nas ruas. Qual o seu posicionamento?",
         alternativas: [
             {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
+                texto: "Defender políticas públicas severas de punição a maus-tratos e incentivo à castração gratuita.",
+                afirmacao: "Defendeu leis mais rígidas e controle populacional para evitar a superpopulação de animais."
             },
             {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao:"afirmacao"
+                texto: "Incentivar programas voluntários de apoio a lares temporários e feiras de adoção.",
+                afirmacao: "Acredita na força do voluntariado e do acolhimento temporário como solução comunitária."
             }
-            
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "Para divulgar a campanha do abrigo local, você precisa criar um material visual de divulgação. Como prefere fazer?",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao:"afirmacao"
+                texto: "Produzir cartazes manuais e fotos reais dos animais do abrigo para gerar conexão.",
+                afirmacao: "Preferiu dar visibilidade real às histórias e rostos dos animais que buscam um lar."
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao:"afirmacao"
+                texto: "Criar artes digitais explicativas com dicas de como a comunidade pode ajudar.",
+                afirmacao: "Usou a tecnologia e a informação clara para engajar o público nas redes sociais."
             }
-            
-            
+        ]
+    },
+    {
+        enunciado: "Um amigo quer comprar um filhote de raça em um canil, mas você sabe que existem diversos animais precisando de um lar nos abrigos da cidade. O que você faz?",
+        alternativas: [
+            {
+                texto: "Convida ele para visitar um abrigo antes de decidir, mostrando a importância da adoção.",
+                afirmacao: "Inspirou pessoas ao seu redor a considerarem a adoção responsável antes da compra."
+            },
+            {
+                texto: "Orienta sobre como verificar se o canil é ético e respeita o bem-estar dos animais parentes.",
+                afirmacao: "Promoveu a conscientização sobre o bem-estar animal em todas as formas de posse responsável."
+            }
         ]
     },
 ];
@@ -109,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "O seu impacto na causa animal:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
